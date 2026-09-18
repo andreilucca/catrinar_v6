@@ -3,35 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mihai Catrinar — Cinematic Learning Experiences</title>
+    <title>Mihai Catrinar | Education & Experiential Learning</title>
     <meta
       name="description"
-      content="Mihai Catrinar V6 — a cinematic personal website about learning design, coaching, visual thinking, and outdoor reflection."
+      content="Mihai Catrinar is a Romanian-born education and experiential learning leader working across school leadership, professional learning, movement, and outdoor reflection."
     />
-    <meta
-      property="og:title"
-      content="Mihai Catrinar — Cinematic Learning Experiences"
-    />
+    <meta property="og:title" content="Mihai Catrinar" />
     <meta
       property="og:description"
-      content="A cinematic personal website with interactive motion, editorial storytelling, and a photo journal."
+      content="Education, experiential learning, coaching, speaking, writing, and Outdoor Joy."
     />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="assets/images/mihai-portrait.jpg" />
-    <meta property="og:url" content="https://andreilucca.github.io/catrinar_v6/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#120d09" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="preload" as="image" href="assets/images/mihai-portrait.jpg" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
-    <div class="site-shell">
+    <div class="site-shell" id="site-shell">
       <header class="site-header">
         <a class="brand" href="#top" aria-label="Mihai Catrinar home">
           <span class="brand-mark">MC</span>
           <span class="brand-copy">
             <strong>Mihai Catrinar</strong>
-            <span>Learning experiences in motion</span>
+            <span>Education &amp; experiential learning</span>
           </span>
         </a>
 
@@ -40,202 +41,463 @@
           type="button"
           aria-expanded="false"
           aria-controls="site-navigation"
+          aria-label="Open navigation menu"
         >
           Menu
         </button>
 
         <nav id="site-navigation" class="site-nav" aria-label="Primary">
           <a href="#story">Story</a>
-          <a href="#practice">Practice</a>
+          <a href="#journey">Journey</a>
+          <a href="#act">ACT</a>
+          <a href="#speaking">Speaking</a>
+          <a href="#writing">Writing</a>
           <a href="#gallery">Gallery</a>
           <a href="#contact">Contact</a>
           <button class="motion-toggle" type="button" aria-pressed="false">
-            Motion on
+            Turn motion off
           </button>
         </nav>
       </header>
 
       <main id="main">
-        <section class="hero panel" id="top">
-          <div class="hero-copy">
-            <p class="eyebrow">V6 / cinematic personal website</p>
-            <h1>Designing learning that feels alive, physical, and human.</h1>
+        <section class="hero" id="top">
+          <div class="hero-copy" data-reveal>
+            <p class="eyebrow">Romanian-born education and experiential learning leader</p>
+            <p class="hero-name">MIHAI CATRINAR</p>
+            <h1>MOVE PEOPLE. TRANSFORM LEARNING.</h1>
             <p class="hero-text">
-              Mihai Catrinar works at the intersection of facilitation, visual
-              thinking, outdoor perspective, and reflective practice. This site
-              turns that work into an editorial, motion-rich journey.
+              Mihai Catrinar brings 18 years of international experience in school
+              leadership, learning design, professional learning, movement, and
+              experiential education.
+            </p>
+            <p class="hero-text hero-text-secondary">
+              He is MYP Assistant Head and PHE Teacher at Albanian College Tirana,
+              and Professional Learning Coach and Facilitator at Education to Change
+              the World alongside Julie Stern.
             </p>
             <div class="hero-actions">
-              <a class="button button-primary" href="#gallery">Open journal</a>
-              <a class="button button-secondary" href="#practice"
-                >See the practice</a
+              <a class="button button-primary" href="mailto:mihaicatrinar@gmail.com" data-magnetic>
+                <span class="button-content">Start a conversation <span class="button-arrow" aria-hidden="true">↗</span></span>
+              </a>
+              <a
+                class="button button-secondary"
+                href="https://www.conceptualtransfer.com/courses/conceptual-transfer-in-physical-ed-health"
+                target="_blank"
+                rel="noreferrer"
+                data-magnetic
               >
+                <span class="button-content">Explore the ACT course <span class="button-arrow" aria-hidden="true">→</span></span>
+              </a>
             </div>
+            <ul class="hero-meta" aria-label="Key facts">
+              <li>Three regions: Middle East, Southeast Asia, and Europe</li>
+              <li>Outdoor Joy: movement, challenge, nature, reflection, connection</li>
+              <li>Romanian · English · French</li>
+            </ul>
           </div>
 
-          <div class="hero-stage" data-tilt>
-            <div class="orb orb-a"></div>
-            <div class="orb orb-b"></div>
-            <figure class="portrait-card">
+          <div class="hero-stage" data-tilt data-reveal>
+            <div class="orbital-scene" aria-hidden="true">
+              <div class="orbital-glow orbital-glow-a"></div>
+              <div class="orbital-glow orbital-glow-b"></div>
+              <div class="orbital-plane orbital-plane-a">
+                <span class="orbital-node orbital-node-a"></span>
+                <span class="orbital-node orbital-node-b"></span>
+              </div>
+              <div class="orbital-plane orbital-plane-b">
+                <span class="orbital-node orbital-node-c"></span>
+                <span class="orbital-node orbital-node-d"></span>
+              </div>
+              <div class="orbital-plane orbital-plane-c">
+                <span class="orbital-node orbital-node-e"></span>
+              </div>
+            </div>
+            <figure class="portrait-frame">
               <img
                 src="assets/images/mihai-portrait.jpg"
                 alt="Portrait of Mihai Catrinar"
+                width="389"
+                height="389"
+                loading="eager"
+                fetchpriority="high"
+                sizes="(max-width: 920px) 68vw, 389px"
               />
               <figcaption>
-                From classrooms to mountains, the same question remains: how do
-                we create memorable transformation?
+                Learn. Experience. Reflect. Transfer.
               </figcaption>
             </figure>
           </div>
         </section>
 
-        <section class="story-grid" id="story">
-          <article class="panel narrative" data-tilt>
-            <p class="eyebrow">Story</p>
-            <h2>Work that moves between whiteboards, workshops, and wild air.</h2>
-            <p>
-              The V6 website is built like a visual essay: each section holds a
-              different texture of Mihai's work, from thoughtful instruction to
-              collaborative facilitation and recovery through nature.
-            </p>
-          </article>
-
-          <article class="panel feature-card">
-            <img
-              src="assets/images/classroom-whiteboard.jpg"
-              alt="A classroom whiteboard filled with notes and diagrams"
-            />
-            <div>
-              <p class="eyebrow">Teaching</p>
-              <h3>Clear thinking made visible</h3>
-              <p>
-                Lessons, frameworks, and questions are treated as shared
-                surfaces for discovery rather than one-way delivery.
-              </p>
-            </div>
-          </article>
-
-          <article class="panel feature-card">
-            <img
-              src="assets/images/workshop-coaches.jpg"
-              alt="Facilitated workshop with coaches in conversation"
-            />
-            <div>
-              <p class="eyebrow">Facilitation</p>
-              <h3>Room energy that becomes momentum</h3>
-              <p>
-                Group work is framed cinematically here: voices, bodies, and
-                ideas converging into a practical next step.
-              </p>
-            </div>
-          </article>
-        </section>
-
-        <section class="panel practice-grid" id="practice">
-          <div class="section-heading">
-            <p class="eyebrow">Practice</p>
-            <h2>Three recurring modes of work.</h2>
-          </div>
-
-          <div class="practice-cards">
-            <article class="practice-card" data-tilt>
-              <img
-                src="assets/images/virtual-class.jpg"
-                alt="Virtual classroom screen during an online teaching session"
-              />
-              <h3>Digital rooms</h3>
-              <p>
-                Translating presence into online sessions that still feel warm,
-                participatory, and memorable.
-              </p>
-            </article>
-
-            <article class="practice-card" data-tilt>
-              <img
-                src="assets/images/sketchnote-conceptual-pe.jpg"
-                alt="A sketchnote on conceptual physical education"
-              />
-              <h3>Visual synthesis</h3>
-              <p>
-                Turning complexity into a map people can keep, revisit, and use
-                after the moment has passed.
-              </p>
-            </article>
-
-            <article class="practice-card" data-tilt>
-              <img
-                src="assets/images/transfer-map.jpg"
-                alt="A transfer map diagram connecting ideas and learning"
-              />
-              <h3>Transfer by design</h3>
-              <p>
-                Building experiences that travel beyond the room into habits,
-                teaching choices, and daily practice.
-              </p>
-            </article>
-          </div>
-        </section>
-
-        <section class="panel quote-strip" aria-label="Personal note">
+        <section class="question-band panel" data-reveal>
+          <p class="eyebrow">Guiding question</p>
+          <h2>How do we design experiences that build capabilities people can transfer to life?</h2>
           <p>
-            “The strongest learning experiences are not just understood. They
-            are felt, rehearsed, and remembered.”
+            That question sits underneath Mihai's work in classrooms, professional
+            learning, movement, and Outdoor Joy.
           </p>
         </section>
 
-        <section class="panel gallery-section" id="gallery">
-          <div class="section-heading">
-            <p class="eyebrow">Photo journal</p>
-            <h2>Field notes from work, family, and recovery.</h2>
+        <section class="story-layout" id="story">
+          <article class="panel biography" data-reveal>
+            <p class="eyebrow">Biography</p>
+            <h2>Learning that is embodied, transferable, and deeply human.</h2>
             <p>
-              Open any frame for a closer look. The gallery is keyboard
-              accessible and respects the motion preference toggle above.
+              Mihai Catrinar is an Education and Experiential Learning Leader whose
+              practice connects curriculum, coaching, movement, and reflection. His
+              work spans school leadership, physical and health education, concept-based
+              learning, professional learning, and outdoor experiences that invite people
+              to notice what they can carry back into everyday life.
+            </p>
+            <p>
+              His academic preparation includes an MA in Technology, Education and Learning
+              from the University of Leeds, Leading Learning from Harvard Business School
+              Online, and a BA in Physical Education. Across schools and workshops, he
+              works to create experiences that are clear enough to transfer and alive enough
+              to remember.
+            </p>
+          </article>
+
+          <figure class="panel spotlight-card" data-reveal>
+            <img
+              src="assets/images/classroom-whiteboard.jpg"
+              alt="Student messages and thinking routines across a classroom whiteboard"
+              width="2048"
+              height="1536"
+              loading="lazy"
+              decoding="async"
+              sizes="(max-width: 920px) 100vw, 38vw"
+            />
+            <figcaption>
+              Visible thinking, student voice, and conceptual clarity inside the room.
+            </figcaption>
+          </figure>
+
+          <article class="panel practice-panel" data-reveal>
+            <p class="eyebrow">Current work</p>
+            <h2>School leadership, coaching, and facilitation.</h2>
+            <div class="practice-list">
+              <p>
+                <strong>Albanian College Tirana</strong> · MYP Assistant Head and PHE Teacher
+              </p>
+              <p>
+                <strong>Education to Change the World</strong> · Professional Learning Coach and
+                Facilitator alongside Julie Stern
+              </p>
+              <p>
+                <strong>Outdoor Joy</strong> · Movement, challenge, nature, reflection, connection
+              </p>
+            </div>
+          </article>
+
+          <figure class="panel spotlight-card spotlight-card-offset" data-reveal>
+            <img
+              src="assets/images/workshop-coaches.jpg"
+              alt="Mihai facilitating a workshop conversation with coaches"
+              width="1280"
+              height="960"
+              loading="lazy"
+              decoding="async"
+              sizes="(max-width: 920px) 100vw, 28vw"
+            />
+            <figcaption>
+              Professional learning designed for transfer beyond the session itself.
+            </figcaption>
+          </figure>
+        </section>
+
+        <section class="journey-section panel" id="journey" data-reveal>
+          <div class="section-heading">
+            <p class="eyebrow">Journey</p>
+            <h2>A career shaped across three regions.</h2>
+            <p>
+              Overlapping roles are intentional: classroom practice, leadership, and coaching
+              continue to inform one another.
+            </p>
+          </div>
+          <ol class="timeline">
+            <li>
+              <span class="timeline-year">2008–2013</span>
+              <div>
+                <h3>Abu Dhabi Grammar School</h3>
+                <p>Built foundations in teaching, movement, and student growth.</p>
+              </div>
+            </li>
+            <li>
+              <span class="timeline-year">2013–2015</span>
+              <div>
+                <h3>SEK International School Qatar, Doha</h3>
+                <p>Expanded concept-driven teaching and international-minded practice.</p>
+              </div>
+            </li>
+            <li>
+              <span class="timeline-year">2015–2018</span>
+              <div>
+                <h3>Stamford American International School, Singapore</h3>
+                <p>Deepened curriculum design through inquiry, transfer, and innovation.</p>
+              </div>
+            </li>
+            <li>
+              <span class="timeline-year">2018–2022</span>
+              <div>
+                <h3>Arab International Academy, Doha</h3>
+                <p>Connected leadership, teaching, and professional learning in one practice.</p>
+              </div>
+            </li>
+            <li>
+              <span class="timeline-year">2021–present</span>
+              <div>
+                <h3>Education to Change the World</h3>
+                <p>Coaches and facilitates professional learning alongside Julie Stern.</p>
+              </div>
+            </li>
+            <li>
+              <span class="timeline-year">2023–present</span>
+              <div>
+                <h3>Albanian College Tirana</h3>
+                <p>Serves as MYP Assistant Head and PHE Teacher.</p>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <section class="act-section" id="act">
+          <article class="panel act-copy" data-reveal>
+            <p class="eyebrow">ACT framework</p>
+            <h2>Acquire. Connect. Transfer.</h2>
+            <p>
+              The ACT approach is credited to Julie Stern, Kayla Duncan, and Trevor Aleo.
+              Mihai co-leads the course with Julie Stern, helping educators design learning
+              that moves from understanding into application.
+            </p>
+            <p>
+              More than 100 educators have been certified through the course in conceptual
+              transfer in physical education and health.
+            </p>
+            <a
+              class="button button-primary"
+              href="https://www.conceptualtransfer.com/courses/conceptual-transfer-in-physical-ed-health"
+              target="_blank"
+              rel="noreferrer"
+              data-magnetic
+            >
+              <span class="button-content">Visit the course <span class="button-arrow" aria-hidden="true">→</span></span>
+            </a>
+          </article>
+
+          <figure class="panel act-figure" data-reveal>
+            <img
+              src="assets/images/sketchnote-conceptual-pe.jpg"
+              alt="Sketchnote about conceptual physical education"
+              width="2048"
+              height="1448"
+              loading="lazy"
+              decoding="async"
+              sizes="(max-width: 920px) 100vw, 42vw"
+            />
+            <figcaption>
+              Sketchnote by Ania Cholewinska (@edu.ideas).
+            </figcaption>
+          </figure>
+        </section>
+
+        <section class="resource-section" id="speaking">
+          <article class="panel resource-copy" data-reveal>
+            <p class="eyebrow">Speaking</p>
+            <h2>Sessions that connect conceptual understanding with lived practice.</h2>
+            <ul class="resource-list">
+              <li>
+                <a href="https://www.youtube.com/watch?v=UMsb0_iomHo" target="_blank" rel="noreferrer">
+                  Conceptual Understanding in Physical Education
+                </a>
+              </li>
+              <li>
+                <a href="https://learn.toddleapp.com/talk_post/physical-education-in-the-virtual-pyp-classroom/" target="_blank" rel="noreferrer">
+                  Physical Education in the Virtual PYP Classroom
+                </a>
+              </li>
+              <li>
+                <a href="https://fitnwitpe.wordpress.com/2022/03/04/fitness-fanatics-and-physical-education-job-alike-presentations-at-toddle-ties-2022/" target="_blank" rel="noreferrer">
+                  Fitness Fanatics and Physical Education Job Alike — Toddle TIES 2022
+                </a>
+              </li>
+            </ul>
+          </article>
+
+          <figure class="panel resource-figure" data-reveal>
+            <img
+              src="assets/images/virtual-class.jpg"
+              alt="Virtual physical education class on screen"
+              width="1280"
+              height="729"
+              loading="lazy"
+              decoding="async"
+              sizes="(max-width: 920px) 100vw, 34vw"
+            />
+            <figcaption>
+              Translating presence and participation into digital learning spaces.
+            </figcaption>
+          </figure>
+        </section>
+
+        <section class="resource-section resource-section-reverse" id="writing">
+          <figure class="panel resource-figure" data-reveal>
+            <img
+              src="assets/images/transfer-map.jpg"
+              alt="Visual map about learning transfer across connected ideas"
+              width="1280"
+              height="705"
+              loading="lazy"
+              decoding="async"
+              sizes="(max-width: 920px) 100vw, 34vw"
+            />
+            <figcaption>
+              Writing that turns ideas into tools people can revisit and use.
+            </figcaption>
+          </figure>
+
+          <article class="panel resource-copy" data-reveal>
+            <p class="eyebrow">Writing</p>
+            <h2>Articles, reflections, and curriculum conversations.</h2>
+            <ul class="resource-list">
+              <li>
+                <a href="https://fitnwitpe.wordpress.com/2023/05/08/physical-education-today-a-student-perspective/" target="_blank" rel="noreferrer">
+                  Physical Education Today — A Student Perspective
+                </a>
+              </li>
+              <li>
+                <a href="https://fitnwitpe.wordpress.com/2022/10/27/modern-literacies-module-4-reflections/" target="_blank" rel="noreferrer">
+                  Modern Literacies Module 4 Reflections
+                </a>
+              </li>
+              <li>
+                <a href="https://www.faria.org/curriculum-insights/curriculum-insights-issue2#p2" target="_blank" rel="noreferrer">
+                  Curriculum Insights, Issue 2
+                </a>
+              </li>
+              <li>
+                <a href="https://fitnwitpe.wordpress.com/2020/10/26/conceptual-understanding-in-physical-education-2/" target="_blank" rel="noreferrer">
+                  Conceptual Understanding in Physical Education
+                </a>
+              </li>
+              <li>
+                <a href="https://blogs.ibo.org/sharingpyp/2014/12/18/tech-and-pe-in-early-years/" target="_blank" rel="noreferrer">
+                  Tech and PE in Early Years
+                </a>
+              </li>
+            </ul>
+            <p class="resource-footnote">
+              Also explore <a href="https://fitnwitpe.wordpress.com/" target="_blank" rel="noreferrer">fitnwitpe.wordpress.com</a>
+              and <a href="https://mihaicatrinar.wordpress.com/" target="_blank" rel="noreferrer">mihaicatrinar.wordpress.com</a>.
+            </p>
+          </article>
+        </section>
+
+        <section class="panel reflection-band" data-reveal>
+          <p class="eyebrow">Outdoor Joy</p>
+          <h2>Movement, challenge, nature, reflection, connection.</h2>
+          <p>
+            The same thread runs through classrooms, professional learning, writing, and time
+            outdoors: make meaning, feel it in the body, and return with something usable.
+          </p>
+          <p class="resource-footnote">
+            A related field note:
+            <a
+              href="https://mihaicatrinar.wordpress.com/2018/12/02/flight-385-the-adventurous-oman/"
+              target="_blank"
+              rel="noreferrer"
+              >Flight 385 — The Adventurous Oman</a
+            >.
+          </p>
+        </section>
+
+        <section class="panel gallery-section" id="gallery" data-reveal>
+          <div class="section-heading">
+            <p class="eyebrow">Gallery</p>
+            <h2>Work, family, nature, and recovery in view.</h2>
+            <p>
+              Every image link works without JavaScript. With JavaScript enabled, the gallery opens
+              an accessible lightbox instead.
             </p>
           </div>
 
           <div class="gallery-grid">
-            <button
+            <a
               class="gallery-item gallery-item-large"
-              type="button"
+              href="assets/images/beach-study.jpg"
               data-lightbox-src="assets/images/beach-study.jpg"
-              data-lightbox-alt="Studying by the beach"
+              data-lightbox-alt="Mihai studying beside the beach"
               data-lightbox-title="Beach study"
             >
-              <img src="assets/images/beach-study.jpg" alt="Studying by the beach" />
-            </button>
-            <button
+              <img
+                src="assets/images/beach-study.jpg"
+                alt="Mihai studying beside the beach"
+                width="1536"
+                height="2048"
+                loading="lazy"
+                decoding="async"
+                sizes="(max-width: 920px) 100vw, 48vw"
+              />
+              <span>Beach study</span>
+            </a>
+            <a
               class="gallery-item"
-              type="button"
+              href="assets/images/canyon-poetry.jpg"
               data-lightbox-src="assets/images/canyon-poetry.jpg"
-              data-lightbox-alt="Looking across a canyon landscape"
+              data-lightbox-alt="Photo book above a turquoise river winding through a canyon"
               data-lightbox-title="Canyon poetry"
             >
               <img
                 src="assets/images/canyon-poetry.jpg"
-                alt="Looking across a canyon landscape"
+                alt="Photo book above a turquoise river winding through a canyon"
+                width="1536"
+                height="2048"
+                loading="lazy"
+                decoding="async"
+                sizes="(max-width: 920px) 100vw, 23vw"
               />
-            </button>
-            <button
+              <span>Canyon poetry</span>
+            </a>
+            <a
               class="gallery-item"
-              type="button"
+              href="assets/images/family.jpg"
               data-lightbox-src="assets/images/family.jpg"
               data-lightbox-alt="Family portrait together outdoors"
               data-lightbox-title="Family"
             >
-              <img src="assets/images/family.jpg" alt="Family portrait together outdoors" />
-            </button>
-            <button
+              <img
+                src="assets/images/family.jpg"
+                alt="Family portrait together outdoors"
+                width="2048"
+                height="1630"
+                loading="lazy"
+                decoding="async"
+                sizes="(max-width: 920px) 100vw, 23vw"
+              />
+              <span>Family</span>
+            </a>
+            <a
               class="gallery-item"
-              type="button"
+              href="assets/images/paddleboard.jpg"
               data-lightbox-src="assets/images/paddleboard.jpg"
-              data-lightbox-alt="Standing on a paddleboard"
+              data-lightbox-alt="Mihai standing on a paddleboard"
               data-lightbox-title="Paddleboard"
             >
-              <img src="assets/images/paddleboard.jpg" alt="Standing on a paddleboard" />
-            </button>
-            <button
+              <img
+                src="assets/images/paddleboard.jpg"
+                alt="Mihai standing on a paddleboard"
+                width="1536"
+                height="2048"
+                loading="lazy"
+                decoding="async"
+                sizes="(max-width: 920px) 100vw, 23vw"
+              />
+              <span>Paddleboard</span>
+            </a>
+            <a
               class="gallery-item"
-              type="button"
+              href="assets/images/sheep-romania.jpg"
               data-lightbox-src="assets/images/sheep-romania.jpg"
               data-lightbox-alt="Sheep in the Romanian countryside"
               data-lightbox-title="Sheep, Romania"
@@ -243,73 +505,94 @@
               <img
                 src="assets/images/sheep-romania.jpg"
                 alt="Sheep in the Romanian countryside"
+                width="1536"
+                height="2048"
+                loading="lazy"
+                decoding="async"
+                sizes="(max-width: 920px) 100vw, 23vw"
               />
-            </button>
-            <button
+              <span>Sheep, Romania</span>
+            </a>
+            <a
               class="gallery-item"
-              type="button"
+              href="assets/images/trail-race.jpg"
               data-lightbox-src="assets/images/trail-race.jpg"
-              data-lightbox-alt="Running on a trail race"
+              data-lightbox-alt="Father and son at the start of a trail race"
               data-lightbox-title="Trail race"
             >
-              <img src="assets/images/trail-race.jpg" alt="Running on a trail race" />
-            </button>
-            <button
+              <img
+                src="assets/images/trail-race.jpg"
+                alt="Father and son at the start of a trail race"
+                width="1536"
+                height="2048"
+                loading="lazy"
+                decoding="async"
+                sizes="(max-width: 920px) 100vw, 23vw"
+              />
+              <span>Trail race</span>
+            </a>
+            <a
               class="gallery-item"
-              type="button"
+              href="assets/images/winter-hot-chocolate.jpg"
               data-lightbox-src="assets/images/winter-hot-chocolate.jpg"
-              data-lightbox-alt="Winter hot chocolate scene"
+              data-lightbox-alt="Winter pause with hot chocolate outdoors"
               data-lightbox-title="Winter pause"
             >
               <img
                 src="assets/images/winter-hot-chocolate.jpg"
-                alt="Winter hot chocolate scene"
+                alt="Winter pause with hot chocolate outdoors"
+                width="1536"
+                height="2048"
+                loading="lazy"
+                decoding="async"
+                sizes="(max-width: 920px) 100vw, 23vw"
               />
-            </button>
+              <span>Winter pause</span>
+            </a>
           </div>
         </section>
 
-        <section class="contact-grid" id="contact">
-          <article class="panel contact-card">
+        <section class="contact-section" id="contact">
+          <article class="panel contact-card" data-reveal>
             <p class="eyebrow">Contact</p>
-            <h2>Open for thoughtful collaborations.</h2>
+            <h2>Invite Mihai into the next learning experience.</h2>
             <p>
-              Workshops, learning design, reflective projects, and conversations
-              about how people grow together.
+              For school leadership conversations, professional learning, workshops, speaking,
+              or Outdoor Joy collaborations, reach out directly.
             </p>
-            <a class="button button-primary" href="https://github.com/andreilucca/catrinar_v6"
-              >View repository</a
-            >
+            <div class="hero-actions contact-actions">
+              <a class="button button-primary" href="mailto:mihaicatrinar@gmail.com" data-magnetic>
+                <span class="button-content">mihaicatrinar@gmail.com <span class="button-arrow" aria-hidden="true">↗</span></span>
+              </a>
+            </div>
           </article>
 
-          <article class="panel contact-card subdued">
-            <p class="eyebrow">Built for clarity</p>
-            <ul class="feature-list">
-              <li>Responsive layout with cinematic depth</li>
-              <li>Motion toggle with saved preference</li>
-              <li>Keyboard-friendly mobile navigation</li>
-              <li>Image lightbox with escape-to-close support</li>
+          <article class="panel contact-card contact-links" data-reveal>
+            <p class="eyebrow">Find Mihai online</p>
+            <ul class="resource-list">
+              <li><a href="https://www.linkedin.com/in/mihaicatrinar" target="_blank" rel="noreferrer">LinkedIn</a></li>
+              <li><a href="https://linktr.ee/mihaicatrinar" target="_blank" rel="noreferrer">Linktree</a></li>
+              <li><a href="https://twitter.com/fitnwitpe" target="_blank" rel="noreferrer">Twitter</a></li>
             </ul>
           </article>
         </section>
       </main>
     </div>
 
-    <div class="lightbox" hidden>
-      <div class="lightbox-backdrop" data-close-lightbox></div>
-      <div
-        class="lightbox-dialog panel"
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="lightbox-title"
-      >
-        <button class="lightbox-close" type="button" aria-label="Close image">
-          Close
-        </button>
-        <img class="lightbox-image" src="" alt="" />
-        <p class="eyebrow" id="lightbox-title"></p>
+    <dialog
+      class="lightbox"
+      aria-labelledby="lightbox-title"
+      aria-modal="true"
+    >
+      <div class="lightbox-surface panel" role="document">
+        <div class="lightbox-header">
+          <p class="eyebrow" id="lightbox-title">Image preview</p>
+          <button class="lightbox-close" type="button" aria-label="Close image">Close</button>
+        </div>
+        <img class="lightbox-image" alt="" />
+        <a class="lightbox-source" href="#" target="_blank" rel="noreferrer">Open original image</a>
       </div>
-    </div>
+    </dialog>
 
     <script src="script.js"></script>
   </body>

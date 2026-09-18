@@ -1,0 +1,15 @@
+{
+  "name": "catrinar_v6",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static website for Mihai Catrinar with reproducible Playwright browser tests.",
+  "scripts": {
+    "preview": "python3 -m http.server 8000",
+    "test": "npm run test:e2e",
+    "test:e2e": "playwright test",
+    "test:e2e:install": "playwright install chromium"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0"
+  }
+}
