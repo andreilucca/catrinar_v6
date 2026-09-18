@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title>Mihai Catrinar monogram</title>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#9fd1ff" />
+      <stop offset="100%" stop-color="#edf7ff" />
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="#091423" />
+  <circle cx="64" cy="64" r="42" fill="url(#g)" opacity="0.9" />
+  <path
+    d="M39 86V42h9l16 22 16-22h9v44h-10V58L64 78 49 58v28H39Z"
+    fill="#08111f"
+  />
+</svg>
